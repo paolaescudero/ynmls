@@ -1,6 +1,7 @@
 @font-face { font-family: SimpsonFont; src: url('Simpsonfont.otf'); } 
 
 
+
 body{
     background-color: #2a94eb;
     background-image: url("img/cielo.jpg");
@@ -15,6 +16,7 @@ h1{
     font-size: 3em;
 }
 
+
 .tagline{
     font-size: 1.2em;
 }
@@ -27,11 +29,28 @@ h1{
 .cap-card{
     border: 2px yellow solid;
     padding: 5px 15px 15px 15px;
-    align-self: center;
+    justify-content: center;
     margin: 5px;
     background-color: yellow;
 }
 .cap-cover{
-    height: 20opx;
     width: 300px;
 }
+
+@media only screen and (max-width: 1000px) {
+   
+    .strip{
+        display: block;
+        width: fit-content;
+        justify-self: center;
+        margin: auto;
+    }
+    .cap-card{
+        /* position:relative; */
+        padding: 0px 5px 5px 5px;
+        justify-content: center;
+        margin: 5px;
+        background-color: yellow;
+    }
+   
+  } 
